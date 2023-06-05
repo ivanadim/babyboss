@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/style/main.css">
+    <title>Project bootstrap</title>
+</head>
+
+<body>
+
+    <!-- navbar start -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" arial-label="Baby Boss navigation bar">
+
+        <div class="container-fluid mx-3 navdropdown align-items-start">
+            <div class="nabar-brend  ">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/baby boss.png" alt="babyboss" width="80">
+                </a>
+            </div>
+            <div class="menu">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#dropdown-menu"
+                    aria-controls="dropdown-menu" aria-expanded="false" aria-label="toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-menu">
+                    <div class="collapse navbar-collapse" id="dropdown-menu">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active active-list">
+                                <a class="nav-link active" href="#">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="products.html" id="navbarDropdownMenuLink"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Products
+                                </a>
+                                <ul class="dropdown-menu container-fluid" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="products.html">Clothes</a></li>
+                                    <li><a class="dropdown-item" href="products.html">Toys</a></li>
+                                    <li><a class="dropdown-item" href="products.html">Baby's Collection</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="aboutus.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-icons d-flex">
+                <ul class=" d-flex flex-row  custom-navbar-cta navbar-nav">
+                    <li><a id="profile_icon" class="nav-link profile" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" href="#"><i class="bi bi-person-fill"></i></a>
+                        <div id="dropdown-menuid" class="container cont-login dropdown-menu dropdown-menu-end my-5 "
+                            data-bs-popper="static">
+                            <div class="welcome">
+                                <div class="pinkbox">
+                                    <div class="signup nodisplay">
+                                        <h1>register</h1>
+                                        <form autocomplete="off">
+                                            <input type="text" placeholder="username">
+                                            <input type="email" placeholder="email">
+                                            <input type="password" placeholder="password">
+                                            <input type="password" placeholder="confirm password">
+                                            <button class="button submit">create account </button>
+                                        </form>
+                                    </div>
+                                    <div class="signin">
+                                        <h1>log in</h1>
+                                        <form class="more-padding" autocomplete="off">
+                                            <input type="text" placeholder="username">
+                                            <input type="password" placeholder="password">
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="remember" /><label for="remember">remember
+                                                    me</label>
+                                            </div>
+
+                                            <button class="button submit">log in</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="leftbox text-center">
+                                    <img src="assets/img/user (1).png" alt="user"
+                                        style="width: 50px; margin-bottom: 50px;">
+                                    <p class="account">have an account?</p>
+                                    <button class="button" id="signin">log in</button>
+                                </div>
+                                <div class="rightbox text-center">
+                                    <img src="assets/img/user.png" alt="user" style="width: 50px; margin-bottom: 50px;">
+                                    <p class="account">don't have an account?</p>
+                                    <button class="button" id="signup">sign up</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </li>
+                    <li><a class="nav-link" href="cart.html"><i class="bi bi-cart2"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <!-- navbar end -->
+    <!-- slider -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/img/pexels-allan-mas-5623687.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="fw-bold my-5">Colorful and comfortable clothes for your children!</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/pexels-cottonbro-studio-3661452.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="my-5  fw-bold">The best toys for interactive and educational fun!</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/summer.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption ">
+                    <!-- d-none d-md-block -->
+                    <h5 class="my-5 fw-bold">The new summer collection has arrived!!!</h5>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- slider end -->
+    <div id="backgroun-img-home">
+        <!-- new colection -->
+        <div class="container my-5 colection-slide p-5" class="py-5 d-flex flex-column align-items-center">
+            <div class="row my-5 text-center d-flex justify-content-center">
+                <div class=" col-xl-4 col-md-7 align-self-center title ">
+                    <h2 class=" border-start border-5  p-2" style="width: fit-content;">New collection</h2>
+                </div>
+            </div>
+            <div class="row d-flex flex-row">
+                <div class="col-lg-3 col-md-6 mb-3 ">
+                    <div class="product-box m-4">
+                        <div class="products-inner-box position-relative">
+                            <div class="icons position-absolute">
+                                <a href="" class="text-decoration-none text-dark"><i
+                                        class="bi bi-heart-fill text-danger"></i></a>
+                                <a href="" class="text-decoration-none text-dark"><i
+                                        class="bi bi-eye text-info"></i></a>
+                            </div>
+                            <div class="img-border">
+                                <img src="assets/img/dress.jpg" alt="dress" class="img-fluid">
+                            </div>
+                            <div class="cart-btn">
+                                <button class="btn btn-dark shadow-sn rounded-pill"><i class="bi bi-cart "></i> Add to
+                                    card
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info d-flex justify-content-around align-items-center mt-3">
+                            <div class="product-name">
+                                <h3>Dress</h3>
+                            </div>
+                            <div class="product-price">
+                                <span>15 EUR</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="product-box m-4">
+                        <div class="products-inner-box position-relative">
+                            <div class="icons position-absolute">
+                                <a href="" class="text-decoration-none text-dark"><i
+                                        class="bi bi-heart-fill text-danger"></i></a>
+                                <a href="" class="text-decoration-none text-dark"><i
+                                        class="bi bi-eye text-info"></i></a>
+                            </div>
+                            <div class="img-border">
+                                <img src="assets/img/body.jpg" alt="dress" class="img-fluid">
+                            </div>
+                            <div class="cart-btn">
+                                <button class="btn btn-dark shadow-sn rounded-pill"><i class="bi bi-cart "></i> Add to
+                                    card
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info d-flex justify-content-around align-items-center mt-3">
+                            <div class="product-name">
+                                <h3>Baby Bodysuit</h3>
+                            </div>
+                            <div class="product-price">
+                                <span>10 EUR</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="product-box m-4">
+                        <div class="products-inner-box position-relative">
+                            <div class="icons position-absolute">
+                                <a href="" class="text-decoration-none text-dark"><i
+                                        class="bi bi-heart-fill text-danger"></i></a>
+                                <a href="" class="text-decoration-none text-dark"><i
+                                        class="bi bi-eye text-info"></i></a>
+                            </div>
+                            <div class="img-border">
+                                <img src="assets/img/maica.jpg" alt="dress" class="img-fluid">
+                            </div>
+                            <div class="cart-btn">
+                                <button class="btn btn-dark shadow-sn rounded-pill"><i class="bi bi-cart "></i>Add to
+                                    card
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info d-flex justify-content-around align-items-center mt-3">
+                            <div class="product-name">
+                                <h3>T-shirt</h3>
+                            </div>
+                            <div class="product-price">
+                                <span>8 EUR</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="product-box m-4">
+                        <div class="products-inner-box position-relative">
+                            <div class="icons position-absolute">
+                                <a href="" class="text-decoration-none text-dark"><i
+                                        class="bi bi-heart-fill text-danger"></i></a>
+                                <a href="" class="text-decoration-none text-dark"><i
+                                        class="bi bi-eye text-info"></i></a>
+                            </div>
+                            <div class="img-border">
+                                <img src="assets/img/maica1.jpg" alt="dress" class="img-fluid">
+                            </div>
+                            <div class="cart-btn">
+                                <button class="btn btn-dark shadow-sn rounded-pill"><i class="bi bi-cart "></i>Add to
+                                    card
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info d-flex justify-content-around align-items-center mt-3">
+                            <div class="product-name">
+                                <h3>T-shirt</h3>
+                            </div>
+                            <div class="product-price">
+                                <span>8 EUR</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-5 text-center d-flex justify-content-center">
+                <div class=" col-xl-4 col-md-7 align-self-center title ">
+                    <a href="products.html" class="btn btnmore btn-primary my-3 fw-bold" role="button">MORE</a>
+                </div>
+            </div>
+        </div>
+        <!-- new collection end -->
+    </div>
+    <!-- banner -->
+    <div class="container-fluid banner p-0">
+        <div class=" row">
+            <div class="col-lg-7 col-md-6 col-sm-3"><img class="img-fluid w-100"
+                    src="assets/img/portrait-little-caucasian-children-with-bright-emotions-isolated-yellow.png" alt="">
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-9 pe-5">
+                <div class="h-100">
+                    <div class="text-white text-center">
+                        <h1 class="mb-3 fw-bold">SUMMER SALE</h1>
+                        <h4 class="mb-3 ">up to 40% off</h4>
+                        <!-- <a class="btn btn-outline-light btn-lg" href="#!" role="button">Buy Now</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="backgroun-img-home">
+        <!-- On sale -->
+        <div class="container my-5 colection-slide p-5" class="py-5 d-flex flex-column align-items-center">
+            <div class="row my-5 text-center d-flex justify-content-center">
+                <div class=" col-lg-3 col-md-8 align-self-center title ">
+                    <h2 class=" border-start border-5  p-2" style="width: fit-content;">Sale</h2>
+                </div>
+            </div>
+            <div class="row d-flex flex-row">
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="product-box m-4">
+                        <div class="products-inner-box position-relative">
+                            <div class="icons position-absolute">
+                                <a href="" class="text-decoration-none text-dark"><i
+                                        class="bi bi-heart-fill text-danger"></i></a>
+                                <a href="" class="text-decoration-none text-dark"><i
+                                        class="bi bi-eye text-info"></i></a>
+                            </div>
+                            <div class="onsale">
+                                <span class="badge rounded-0"><i class="bi bi-arrow-down"></i>30%</span>
+                            </div>
+                            <div class="img-border">
+                                <img src="assets/img/helanki.jpg" alt="dress" class="img-fluid">
+                            </div>
+                            <div class="cart-btn">
+                                <button class="btn btn-dark shadow-sn rounded-pill"><i class="bi bi-cart "></i>Add to
+                                    card
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info d-flex align-items-center justify-content-around mt-3">
+                            <div class="product-name">
+                                <h3>Тrousers</h3>
+                            </div>
+                            <div class="product-price">
+                                <span>5 EUR</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="product-box m-4">
+                        <div class="products-inner-box position-relative">
+                            <div class="icons position-absolute">
+                                <a href="" class="text-decoration-none text-dark"><i
+                                        class="bi bi-heart-fill text-danger"></i></a>
+                                <a href="" class="text-decoration-none text-dark"><i
+                                        class="bi bi-eye text-info"></i></a>
+                            </div>
+                            <div class="onsale">
+                                <span class="badge rounded-0"><i class="bi bi-arrow-down"></i>20%</span>
+                            </div>
+                            <div class="img-border">
+                                <img src="assets/img/dukser.jpg" alt="dress" class="img-fluid">
+                            </div>
+                            <div class="cart-btn">
+                                <button class="btn btn-dark shadow-sn rounded-pill"><i class="bi bi-cart "></i> Add to
+                                    card
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info d-flex align-items-center justify-content-around mt-3">
+                            <div class="product-name">
+                                <h3>Blouse</h3>
+                            </div>
+                            <div class="product-price">
+                                <span>15 EUR</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="product-box m-4">
+                        <div class="products-inner-box position-relative">
+                            <div class="icons position-absolute">
+                                <a href="" class="text-decoration-none text-dark"><i
+                                        class="bi bi-heart-fill text-danger"></i></a>
+                                <a href="" class="text-decoration-none text-dark"><i
+                                        class="bi bi-eye text-info"></i></a>
+                            </div>
+                            <div class="onsale">
+                                <span class="badge rounded-0"><i class="bi bi-arrow-down"></i>30%</span>
+                            </div>
+                            <div class="img-border">
+                                <img src="assets/img/maica na ksui rakavi.jpg" alt="dress" class="img-fluid">
+                            </div>
+                            <div class="cart-btn">
+                                <button class="btn btn-dark shadow-sn rounded-pill"><i class="bi bi-cart "></i>Add to
+                                    card
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info d-flex align-items-center justify-content-around mt-3">
+                            <div class="product-name">
+                                <h3>T-shirt</h3>
+                            </div>
+                            <div class="product-price">
+                                <span>5 EUR</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="product-box m-4">
+                        <div class="products-inner-box position-relative">
+                            <div class="icons position-absolute">
+                                <a href="" class="text-decoration-none text-dark"><i
+                                        class="bi bi-heart-fill text-danger"></i></a>
+                                <a href="" class="text-decoration-none text-dark"><i
+                                        class="bi bi-eye text-info"></i></a>
+                            </div>
+                            <div class="onsale">
+                                <span class="badge rounded-0"><i class="bi bi-arrow-down"></i>15%</span>
+                            </div>
+                            <div class="img-border">
+                                <img src="assets/img/jakna.jpg" alt="dress" class="img-fluid">
+                            </div>
+                            <div class="cart-btn">
+                                <button class="btn btn-dark shadow-sn rounded-pill"><i class="bi bi-cart "></i>Add to
+                                    card
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info d-flex align-items-center justify-content-around mt-3">
+                            <div class="product-name">
+                                <h3>Jacket</h3>
+                            </div>
+                            <div class="product-price">
+                                <span>20 EUR</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-5 text-center d-flex justify-content-center">
+                <div class=" col-xl-4 col-md-7 align-self-center title ">
+                    <a href="products.html" class="btn btnmore btn-primary my-3 fw-bold" role="button">MORE</a>
+                </div>
+            </div>
+        </div>
+        <!-- on sale end -->
+    </div>
+    <!-- Testimonial Start -->
+    <div class="testimonials-content py-5 " width="80%">
+
+        <!--  Block !-->
+        <div class="bg-offset-hero position-relative p-4 py-my-5 m-5">
+            <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center align-items-center">
+                <!--  Column !-->
+                <div class="col-md-4">
+                    <div class="position-relative text-white px-0 px-md-4 px-lg-5 text-center text-md-end">
+                        <h3 class="fs-1 "><strong>What others said about us</strong></h3>
+                    </div>
+                </div>
+                <!--  Column !-->
+                <div class="col-md-8">
+                    <div id="testimonials" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div
+                                    class="back bg-light border border-primary-subtle rounded-3 text-dark p-4 p-md-5 position-relative">
+                                    <div class="row g-4">
+                                        <div class="col-md-3">
+                                            <img src="assets/img/testimonial-profile.jpg" class="img-fluid rounded-3"
+                                                alt="">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <p class="lead mb-0">"Great choice! The boutique is a real place where
+                                                can
+                                                find everything you need!"</p>
+                                            <span class="d-block text-warning mt-3 mb-4">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </path>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </path>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </path>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </path>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <h4 class="fs-5 fw-bold mb-0">Marija</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div
+                                    class="back bg-light border border-primary-subtle rounded-3 text-dark p-4 p-md-5 position-relative">
+                                    <div class="row g-4">
+                                        <!--  Image !-->
+                                        <div class="col-md-3">
+                                            <img src="assets/img/testimonial-profile1.jpg" class="img-fluid rounded-3"
+                                                alt="">
+                                        </div>
+                                        <!--  Text !-->
+                                        <div class="col-md-9">
+                                            <!--  Text !-->
+                                            <p class="lead mb-0">"Amazing selection of fashionable and quality clothes!"
+                                            </p>
+                                            <span class="d-block text-warning mt-3 mb-4">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </path>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </path>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </path>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </path>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <h4 class="fs-5 fw-bold mb-0">Simona</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div
+                                    class="back bg-light border border-primary-subtle rounded-3 text-dark p-4 p-md-5 position-relative">
+                                    <!--  Icon !-->
+                                    <span
+                                        class="d-block position-absolute top-0 start-50 translate-middle-x text-muted quote_">
+                                        <img src="" alt="">
+                                    </span>
+                                    <div class="row g-4">
+                                        <!--  Image !-->
+                                        <div class="col-md-3">
+                                            <img src="assets/img/testimonial-profile2.jpg" class="img-fluid rounded-3"
+                                                alt="">
+                                        </div>
+                                        <!--  Text !-->
+                                        <div class="col-md-9">
+                                            <!--  Text !-->
+                                            <p class="lead mb-0">"A wonderful boutique for children and toys! The
+                                                quality of
+                                                the product is excellent, I recommend it to all parents who are looking
+                                                for it
+                                                quality and creative toys for their children." </p>
+                                            <span class="d-block text-warning mt-3 mb-4">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </path>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </path>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </path>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                    </path>
+                                                </svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <h4 class="fs-5 fw-bold mb-0">Dragana</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-indicators position-relative mt-4">
+                            <button type="button" data-bs-target="#testimonials" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#testimonials" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#testimonials" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- footer -->
+    <footer class="foter-color">
+        <div class="container py-5 d-flex flex-column ">
+
+            <div class="row g-4 text-white d-flex align-items-start">
+                <div class="col-md-6 col-lg-3">
+                    <img src="assets/img/baby boss.png" width="200" alt="baby-boss">
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="my-3">
+                            <a href="index.html" class="text-white text-decoration-none text-muted"><i
+                                    class="bi bi-caret-right-fill"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="products.html" class="text-white text-decoration-none text-muted"><i
+                                    class="bi bi-caret-right-fill"></i>
+                                Products
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="aboutus.html" class="text-white text-decoration-none text-muted"><i
+                                    class="bi bi-caret-right-fill"></i>
+                                Blog
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="aboutus.html" class="text-white text-decoration-none text-muted"><i
+                                    class="bi bi-caret-right-fill"></i>
+                                About us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="mb-3">Follow Us</h5>
+                    <div>
+                        <ul class="list-unstyled d-flex">
+                            <li>
+                                <a href="" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <img src="assets/img/facebook (5).png" alt="" style="width: 40px;">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <img src="assets/img/instagram (2).png" alt="" style="width: 40px;">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <img src="assets/img/twitter (1).png" alt="" style="width: 40px;">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <ul class="list-unstyled d-flex mt-4">
+                            <li>
+                                <a href="" class="text-white text-decoration-none text-muted fs-4 me-3">
+                                    <img src="assets/img/payment.png" width="200px" alt="payment-card">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="mb-3">Contact</h5>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="bi bi-map"></i>
+                        </span>
+                        <span class="fw-light">
+                            Gevgeliski Partizanski Odredi br 25
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="bi bi-envelope"></i>
+                        </span>
+                        <span class="fw-light">
+                            babybosstoys1@gmail.com
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="bi bi-telephone"></i>
+                        </span>
+                        <span class="fw-light">
+                            00389 77 859 011
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+
+
+    <script src="assets/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/style/main.css">
+    <title>Project bootstrap</title>
+
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" arial-label="Baby Boss navigation bar">
+
+        <div class="container-fluid mx-3 navdropdown align-items-start">
+            <div class="nabar-brend  ">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/baby boss.png" alt="babyboss" width="80">
+                </a>
+            </div>
+            <div class="menu">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#dropdown-menu"
+                    aria-controls="dropdown-menu" aria-expanded="false" aria-label="toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-menu">
+                    <div class="collapse navbar-collapse" id="dropdown-menu">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active active-list">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="products.html" id="navbarDropdownMenuLink"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Products
+                                </a>
+                                <ul class="dropdown-menu container-fluid" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="products.html">Clothes</a></li>
+                                    <li><a class="dropdown-item" href="products.html">Toys</a></li>
+                                    <li><a class="dropdown-item" href="products.html">Baby's Collection</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="aboutus.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-icons d-flex">
+                <ul class=" d-flex flex-row  custom-navbar-cta navbar-nav">
+                    <li><a id="profile_icon" class="nav-link profile" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" href="#"><i class="bi bi-person-fill"></i></a>
+                        <div id="dropdown-menuid" class="container cont-login dropdown-menu dropdown-menu-end my-5 "
+                            data-bs-popper="static">
+                            <div class="welcome">
+                                <div class="pinkbox">
+                                    <div class="signup nodisplay">
+                                        <h1>register</h1>
+                                        <form autocomplete="off">
+                                            <input type="text" placeholder="username">
+                                            <input type="email" placeholder="email">
+                                            <input type="password" placeholder="password">
+                                            <input type="password" placeholder="confirm password">
+                                            <button class="button submit">create account </button>
+                                        </form>
+                                    </div>
+                                    <div class="signin">
+                                        <h1>log in</h1>
+                                        <form class="more-padding" autocomplete="off">
+                                            <input type="text" placeholder="username">
+                                            <input type="password" placeholder="password">
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="remember" /><label for="remember">remember
+                                                    me</label>
+                                            </div>
+
+                                            <button class="button submit">log in</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="leftbox text-center">
+                                    <img src="assets/img/user (1).png" alt="user"
+                                        style="width: 50px; margin-bottom: 50px;">
+                                    <p class="account">have an account?</p>
+                                    <button class="button" id="signin">log in</button>
+                                </div>
+                                <div class="rightbox text-center">
+                                    <img src="assets/img/user.png" alt="user" style="width: 50px; margin-bottom: 50px;">
+                                    <p class="account">don't have an account?</p>
+                                    <button class="button" id="signup">sign up</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </li>
+                    <li><a class="nav-link" href="cart.html"><i class="bi bi-cart2"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <!-- navbar end -->
+    <div class="image-contact-blog">
+        <img src="assets/img/blog.jpg" alt="">
+    </div>
+
+    <!-- blog post -->
+    <div class="container blog" style="max-width: 80%;">
+        <div class="blog-card row my-5 p-4 ">
+            <div class="col-lg-4 col-md-4 my-2"><img src="assets/img/fever.jpg" class="img-fluid rounded-3 blog-img"
+                    alt=""></div>
+            <div class="col-lg-8 col-md-8 my-2">
+                <div class=" card-body p-0 d-flex flex-column justify-content-evenly h-100">
+                    <h4 class="card-title py-2">Occurrence of infections in children</h4>
+                    <p>Respiratory infections are among the most common health problems in children, and usually
+                        start with a runny nose. These infections are most common in the fall and winter, but they can
+                        occur
+                        and throughout the year. It is usually about viral infections that spread the most easily
+                        in places where a large number of children stay, i.e. in kindergartens and schools.</p>
+                    <h6><input class="btn btn-primary fw-bold" type="button" data-bs-toggle="modal"
+                            data-bs-target="#modal" value="Read more">
+                    </h6>
+                </div>
+            </div>
+        </div>
+        <div class="blog-card row my-5 p-4 ">
+            <div class="col-lg-4 col-md-4 my-2"><img src="assets/img/prvo-letuvanje-so-bebe-1.jpg"
+                    class="img-fluid rounded-3" alt=""></div>
+            <div class="col-lg-8 col-md-8 my-2">
+                <div class=" card-body p-0 d-flex flex-column justify-content-evenly h-100">
+                    <h4 class="card-title py-2 ">First vacation with a baby</h4>
+                    <p>Most parents during this period are already preparing for a trip with their child, especially if
+                        is small and does not like the summer heat at all. Therefore, the following tips will be of
+                        great help to you
+                        benefit, if you have doubts about transportation, the choice of destination and many other open
+                        ones
+                        questions before setting off on the road.</p>
+                    <h6><input class="btn btn-primary fw-bold" type="button" data-bs-toggle="modal"
+                            data-bs-target="#modal1" value="Read more">
+                    </h6>
+                </div>
+            </div>
+        </div>
+        <div class="blog-card row my-5 p-4 ">
+            <div class="col-lg-4 col-md-4 my-2"><img src="assets/img/play.jpg" class="img-fluid rounded-3" alt="">
+            </div>
+            <div class="col-lg-8 col-md-8 my-2">
+                <div class=" card-body p-0 d-flex flex-column justify-content-evenly h-100">
+                    <h4 class="card-title py-2 ">Raising children</h4>
+                    <p>How do we know if we have raised our little angels well, if they need it
+                        trust, love, initial knowledge, education,....and does it depend only on us or is it
+                        their personality, character, or something else.</p>
+                    <h6><input class="btn fw-bold btn-primary" type="button" data-bs-toggle="modal"
+                            data-bs-target="#modal2" value="Read more">
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal -->
+    <div class="container">
+        <div class="modal fade" id="modal">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg ">
+                <div class="modal-content">
+                    <img src="assets/img/fever.jpg" alt="" class="justify-content-start"
+                        style="height: 400px; width: 100%; object-fit: cover;">
+                    <div class="modal-header">
+                        <h1>Occurrence of infections in children</h1>
+                    </div>
+                    <div class="modal-body ">Respiratory infections are among the most common health problems in
+                        children, and they usually start with a runny nose. These infections are most common in the fall
+                        and winter, but can occur year-round.
+                        It is usually about viral infections that spread most easily in places where a large number of
+                        children stay, ie in kindergartens and schools.
+                        In addition to a runny nose, the initial symptoms of this infection include hoarseness or pain
+                        in the throat. After a few days, a cough may appear due to the flow of secretions from the nose
+                        to the throat. Increased temperature is also a sign that the child's body is fighting a viral
+                        infection.
+                        In this case, parents should be patient and allow the natural defense mechanisms to act at
+                        first. According to pediatricians, the temperature up to 38OC should not be reduced. In the
+                        following period, the condition and appearance of the child should be carefully monitored.
+                        In addition to the viral infection, some children may also develop a bacterial infection. If the
+                        child has not recovered after three or four days and seems more and more relaxed, then it is
+                        most likely a bacterial infection. Then you should definitely see a doctor.
+                        Bacterial infections are treated with antibiotics, which must always be prescribed by a doctor,
+                        and the dosage depends on the child's body weight. Antibiotic therapy should always be carried
+                        out to the end, that is, you should not stop it if you think that the child is better. However,
+                        frequent use of antibiotics is not recommended, so it is best to take measures to prevent
+                        bacterial infection at all. The first step is to strengthen immunity, especially in those
+                        children who are more prone to colds.
+                        Natural ways of strengthening immunity are also the most effective. This implies a proper and
+                        healthy diet, rich in vitamins and minerals, enough sleep and regular stay in nature. Certain
+                        plant-based preparations are also recommended as support for strengthening immunity.</div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary fw-bold" data-bs-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="modal fade" id="modal1">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg modal-fullscreen-md-down">
+                <div class="modal-content">
+                    <img src="assets/img/prvo-letuvanje-so-bebe-1.jpg" alt="" class="justify-content-start"
+                        style="height: 400px; width: 100%; object-fit: cover;">
+
+                    <div class="modal-header">
+                        <h1>First vacation with a baby</h1>
+                    </div>
+                    <div class="modal-body">Most parents during this period are already preparing for a trip with their
+                        child, especially if he is small and does not like the summer heat at all. Therefore, the
+                        following tips will be of great use to you, if you have doubts about transportation, choosing a
+                        destination and many other open questions before setting off on the road.
+                        When can you take the baby on a trip?
+
+                        The answer is simple: After the first 2 months have passed, when the baby starts to progress
+                        well in his weight and has no health problems - then he can go on a trip. But first you need to
+                        satisfy some important conditions.
+
+                        – First of all, you must have an adequate means of transportation – the best is a plane, an
+                        air-conditioned car or a luxury sleeping room, if you are traveling by train.
+
+                        – The destination you have chosen for travel should have all the necessary hygiene conditions,
+                        as well as the services of a pediatrician, which you could use if necessary to examine your
+                        baby.
+
+                        – The place you will be should have a well-equipped pharmacy where you can find all the
+                        necessary medicines (however, you could not take everything with you on vacation).
+
+                        - Choose a destination from which you can return home really quickly and easily, if (God forbid)
+                        the child falls ill with a more serious illness that needs appropriate treatment.
+
+
+                        – Be in contact with your pediatrician who could advise you in case of possible problems.
+
+                        Where is the best place to vacation with a baby?
+
+                        Both sea and mountain are good choices. Although it is not easy to fit it into the home budget,
+                        still choose what you like the most. A trip to the sea and a trip to the mountains are also good
+                        for the baby. Usually, summer weather is better at the sea, and winter weather is better at the
+                        mountains, but you can combine both variants. The child will fit in very easily, no worries!
+
+                        Is it safe to travel by car?
+
+                        There is no doubt that the plane is the fastest and most reliable means of travel to the place
+                        you have chosen for vacation. However, if your choice is a car, then you should take care of
+                        certain important things, so that the baby's journey is pleasant.
+
+                        – Car seat
+
+                        All major manufacturers of baby equipment also produce a seat for a baby, and newer models also
+                        have their own offers for quality baby seats that fit ideally into the intended factory space.
+                        The seat should be anatomically padded, and they must have safety belts.
+                        – Air conditioning
+
+                        If you don't have air conditioning in your car, you need to protect yourself and your children
+                        from the heat during the trip. If you are a nocturnal bird, set off in the evening to arrive at
+                        the site before the heat sets in. It is best for children to travel at night, but most drivers
+                        do not want to travel after dark. Then, you should leave early in the morning, so that you spend
+                        at least part of the journey in the cold.
+
+                        – Windows
+
+                        The windows should be only slightly "opened" to ensure the circulation of fresh air. It is not
+                        at all healthy to do a longer draft that only looks good on you.
+
+                        – Glass protectors
+
+                        On the rear side windows, you should put good sun shades for windows, which significantly reduce
+                        the penetration of UV rays. There are similar curtains designed for the rear window that are
+                        transparent enough for drivers, but still make a solid shade for children.
+
+                        – Liquids
+
+                        When you go on the road, it is necessary to take enough fluids (juices and plain water) and
+                        easily digestible food with you. Fruit is also desirable (bananas, apples), but you should not
+                        overdo it, because you can "expel" your stomach from a lot of fruit.
+
+                        – Breaks
+
+                        You need to take breaks every 150-200 kilometers, if possible and more often, if the children
+                        ask for it. Always take a break if you notice any health problems. The cold, sufficient amount
+                        of water and 10 minutes of relaxation will come in handy so you can continue your journey.
+
+                        – Possible problems
+
+                        If the child vomits in the car, you should stop immediately and take a long break before
+                        continuing the journey. To make it easier for him to bear the ride, it is ideal to give him a
+                        light meal one hour before departure, and avoid rich and heavy food. Always, before the start of
+                        the trip, put a clean mat (sheet or terrycloth) made of natural material on the back seat that
+                        can be easily replaced if it gets dirty.</div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary fw-bold" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="modal fade" id="modal2">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg modal-fullscreen-md-down">
+                <div class="modal-content">
+                    <img src="assets/img/play.jpg" alt="" class="justify-content-start"
+                        style="height: 400px; width: 100%; object-fit: cover;">
+                    <div class="modal-header">
+                        <h1>Raising children</h1>
+                    </div>
+                    <div class="modal-body">Is there a more responsible task than raising children, older, more complex,
+                        more beautiful?
+
+
+
+                        How do we know if we have brought up our little angels well, if they need trust, love, initial
+                        knowledge, education... and if it depends only on us or if it is their personality, character,
+                        or something else.
+
+                        For proper upbringing and proper development of the child, it is very important to create a warm
+                        and comfortable home where they will feel comfortable and safe.
+
+                        What is certain is that the family is the first school of life in which the child acquires the
+                        basic knowledge about people, about their mutual relations, as well as about life and its
+                        problems. These are actually the first experiences that the child will use later in life. That
+                        is why raising children in the family is the most responsible task of every family member.
+
+                        the consequences of inappropriate upbringing can be seen already in childhood. Wrong upbringing
+                        discourages a child, makes him not independent, hinders his sense of community and leads him to
+                        avoid responsibilities and work.
+
+                        Success in education can only be achieved when we are self-critical of our educational mistakes,
+                        if we have confidence in the child and if we love him. In order to make him independent faster,
+                        we must make the child independent, that is we have to enable him to independently perform all
+                        the non-duties that according to his age he can only perform. This is necessary to encourage the
+                        child and instill confidence in his abilities. If necessary, help him, but never children's
+                        responsibilities should be fully taken over.</div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary fw-bold" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="foter-color">
+        <div class="container py-5 d-flex flex-column ">
+
+            <div class="row g-4 text-white d-flex align-items-start">
+                <div class="col-md-6 col-lg-3">
+                    <img src="assets/img/baby boss.png" width="200" alt="baby-boss">
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="my-3">
+                            <a href="index.html" class="text-white text-decoration-none text-muted"><i
+                                    class="bi bi-caret-right-fill"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="products.html" class="text-white text-decoration-none text-muted"><i
+                                    class="bi bi-caret-right-fill"></i>
+                                Products
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="aboutus.html" class="text-white text-decoration-none text-muted"><i
+                                    class="bi bi-caret-right-fill"></i>
+                                Blog
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="aboutus.html" class="text-white text-decoration-none text-muted"><i
+                                    class="bi bi-caret-right-fill"></i>
+                                About us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="mb-3">Follow Us</h5>
+                    <div>
+                        <ul class="list-unstyled d-flex">
+                            <li>
+                                <a href="" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <img src="assets/img/facebook (5).png" alt="" style="width: 40px;">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <img src="assets/img/instagram (2).png" alt="" style="width: 40px;">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <img src="assets/img/twitter (1).png" alt="" style="width: 40px;">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <ul class="list-unstyled d-flex mt-4">
+                            <li>
+                                <a href="" class="text-white text-decoration-none text-muted fs-4 me-3">
+                                    <img src="assets/img/payment.png" width="200px" alt="payment-card">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="mb-3">Contact</h5>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="bi bi-map"></i>
+                        </span>
+                        <span class="fw-light">
+                            Gevgeliski Partizanski Odredi br 25
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="bi bi-envelope"></i>
+                        </span>
+                        <span class="fw-light">
+                            babybosstoys1@gmail.com
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="bi bi-telephone"></i>
+                        </span>
+                        <span class="fw-light">
+                            00389 77 859 011
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+</body>
+
+
+
+
+
+<script src="assets/js/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
